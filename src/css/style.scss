@@ -1,8 +1,12 @@
+// @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@font-face {
+  font-family: c-cairo;
+  src: url(./../asset/font/cairo/Cairo-Regular.ttf);
+}
 $btn_color: #a4499b;
 $btn_color_h: #f8be30;
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "c-cairo", sans-serif;
   width: 100% !important;
 }
 
@@ -209,7 +213,7 @@ h3 {
 }
 .card {
   border-radius: 10px;
-  box-shadow: 7px 7px 8px -8px #000;
+  box-shadow: 7px 7px 8px -9px #000;
   color: $btn_color;
 }
 
