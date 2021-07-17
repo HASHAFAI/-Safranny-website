@@ -40,7 +40,6 @@ module.exports ={
                    use:[
                     miniCssExtractPlugin.loader,
                        "css-loader",
-                    //    'postcss-loader',
                        'sass-loader',
                    ]
                },
@@ -70,23 +69,15 @@ module.exports ={
                 ]
               },
               {
-                //   تحديد المسار المطلق لجيكويري من مكتبت نود
                 test: require.resolve("./src/asset/jquery-3.1.1.min.js"),
                 loader: "expose-loader",
                 options: {
-                    //التعرف على صيغ مكتبت جيكويري 
                   exposes: ["$", "jQuery"],
                 },
               },
         ]
     },
-    plugins:[
-        // [
-        //     "postcss-preset-env",
-        //     {
-        //       Options
-        //     },
-        //   ],    
+    plugins:[ 
         new htmlWebpackPlugin({
             filename:"index.html",
             template:"./src/index.html"
