@@ -1,58 +1,57 @@
-body#body{
-    background-image: url(./../images/airplane.jpg);
-    background-position: center;
-    height: 100%;
-    .account{
-        // margin: auto 0;
-        background-color: rgb(0, 0, 0,.7);
-        height: 100%;
-        color: #fff;
-        .center{
-            transform: translate(-50%,-50%);
-            top: 50vh;
-            left: 50vw;
-            position: absolute;
-        }
-        .text{
-            h3{
-            font-size: 20px;
-            margin: 0;
-            padding: 10px 0 0;
-            }
-            img{
-                margin-top: 10px;
-                width:100px;
-            }
-        }
-        .form{
-            form{
-                align-items: center;
-                label{
-                display: table;
-                margin: 0;
-                }
-                input{
-                    display: table;
-                    outline: none;
-                    margin-top: 6px;
-                }
-                button{
-                    margin: 10px auto;
-                    display: block;
-                    padding: 5px 10px;
-                    border: none;
-                    background-color: #a4499b;
-                    color: #fff;
-                    &:hover{
-                        background-color: #f8be30;
-                    }
-                }
-                a{
-                    color: #fff;
-                }
-            }
-        }
-    }
-}
-.form form .error {color: red;}
-// .cmxform {width: 60%;margin: 0 auto 50px;}
+// body#body{
+//     background-image: url(./../images/airplane.jpg);
+//     background-position: center;
+//     height: 100%;
+//     .account{
+//         background-color: rgb(0, 0, 0,.7);
+//         height: 100%;
+//         color: #fff;
+//         .center{
+//             transform: translate(-50%,-50%);
+//             top: 50vh;
+//             left: 50vw;
+//             position: absolute;
+//         }
+//         .text{
+//             h3{
+//             font-size: 20px;
+//             margin: 0;
+//             padding: 10px 0 0;
+//             }
+//             img{
+//                 margin-top: 10px;
+//                 width:100px;
+//             }
+//         }
+//         .form{
+//             form{
+//                 align-items: center;
+//                 label{
+//                 display: table;
+//                 margin: 0;
+//                 }
+//                 input{
+//                     display: table;
+//                     outline: none;
+//                     margin-top: 6px;
+//                 }
+//                 button{
+//                     margin: 10px auto;
+//                     display: block;
+//                     padding: 5px 10px;
+//                     border: none;
+//                     background-color: #a4499b;
+//                     color: #fff;
+//                     &:hover{
+//                         background-color: #f8be30;
+//                     }
+//                 }
+//                 a{
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//     }
+// }
+// .form form .error {color: red;}
+// // .cmxform {width: 60%;margin: 0 auto 50px;}

@@ -10,27 +10,38 @@ nav.navbar {
   img {
     width: 100px;
   }
-  &.noTransparrent{
+  &.noTransparrent {
     background-color: $btn_color;
     button.navbar-toggler {
       margin: 30px 20px;
       span {
-        color: #fff;outline:none;
+        color: #fff;
+        outline: none;
         border: none;
         box-shadow: none;
       }
     }
     ul.navbar-nav li {
       padding: 0 10px;
-      a.nav-link {color: #fff;}
+      a.nav-link {
+        color: #fff;
+      }
     }
     ul.navbar-nav li a.nav-link:hover,
     ul.navbar-nav li a.nav-link.active {
-    color: #fff;background-color: $btn_color_h;
+      color: #fff;
+      background-color: $btn_color_h;
+    }
   }
+  ul li:last-of-type {
+    position: absolute;
+    left: 10px;
   }
-  ul li:last-of-type{position: absolute; left: 10px;}
-  .nav-link{color: #fff;}
+  .nav-link {
+    color: #fff;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link{background-color: $btn_color}
 }
 
 .navbar-expand-md .navbar-nav {
@@ -68,11 +79,16 @@ section#services {
       margin-bottom: 0.5rem;
       padding-bottom: 16px;
     }
+    .icon-img {
+      width: 215px;
+      height: 140px;
+      margin: 0 auto;
+    }
   }
 }
 
 section#tours {
-    padding: 20px 0 40px;
+  padding: 20px 0 40px;
   background-color: #f3f3f3;
   .card {
     color: $btn_color;
@@ -89,8 +105,6 @@ section#tours {
       border-radius: 10px;
     }
     h5 {
-    //   border-bottom: 2px $btn_color solid;
-    //   width: 75%;
       padding-bottom: 15px;
       margin: -25px auto 20px;
       &:before {
@@ -101,66 +115,63 @@ section#tours {
         position: absolute;
         right: 115px;
         width: 80px;
-        }
       }
     }
   }
-// }
+}
 footer {
-    background-position: center;
-    background-image: url(./../images/airplane.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-position: center;
+  background-image: url(./../images/airplane.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   .top-footer {
-    background-color: rgb(23, 23, 23,.9);
+    background-color: rgb(23, 23, 23, 0.9);
     padding: 40px 0;
-    // text-align: right;
     iframe {
       width: 100%;
       height: 180px;
     }
-  h3{
-      color:$btn_color_h ;
-  }
-  h5 {
-    font-size: 18px;
-    line-height: 65px;
-    color: $btn_color_h;
-    margin-bottom: 30px;
-    position: relative;
-    &:before {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 45px;
-      height: 2px;
-      background-color: #5c5c5c;
+    h3 {
+      color: $btn_color_h;
+    }
+    h5 {
+      font-size: 18px;
+      line-height: 65px;
+      color: $btn_color_h;
+      margin-bottom: 30px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 45px;
+        height: 2px;
+        background-color: #5c5c5c;
+      }
+    }
+    ul {
+      padding: 0;
+    }
+    ul.contact-us li {
+      margin-bottom: 35px;
+      font-size: 18px;
+      color: #676767;
+    }
+    ul.contact-us li:last-of-type {
+      margin-bottom: 0px;
+    }
+    ul.contact-us li i {
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 2px;
+      background-color: #282828;
+      color: #acacac;
+      margin-left: 20px;
     }
   }
-  ul {
-    padding: 0;
-  }
-  ul.contact-us li {
-    margin-bottom: 35px;
-    font-size: 18px;
-    color: #676767;
-  }
-  ul.contact-us li:last-of-type {
-    margin-bottom: 0px;
-  }
-  ul.contact-us li i {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    border-radius: 2px;
-    background-color: #282828;
-    color: #acacac;
-    margin-left: 20px;
-  }
-  
-}
   .copyright {
     background-color: rgb(23, 23, 23);
     p {
@@ -203,26 +214,28 @@ h3 {
 }
 
 // @media
-@media(min-width:768px){
+@media (min-width: 768px) {
   .navbar-light .navbar-nav .nav-link {
-      padding: 0 20px;
+    padding: 0 20px;
   }
-  header .text-center{
-      width: 60%;
-      margin: 0 auto;
+  header .text-center {
+    width: 60%;
+    margin: 0 auto;
   }
 }
-@media(max-width:540px){
+@media (max-width: 540px) {
   nav.navbar {
-      background-color: $btn_color;
+    background-color: $btn_color;
   }
-  nav.navbar button span{color: #fff;}
+  nav.navbar button span {
+    color: #fff;
+  }
   nav.navbar button.navbar-toggler,
   nav.navbar.noTransparrent button.navbar-toggler {
-      margin: 0;
-      box-shadow: none;
+    margin: 0;
+    box-shadow: none;
   }
   nav.navbar.noTransparrent ul.navbar-nav li {
-      display: contents;
+    display: contents;
   }
 }
