@@ -1,67 +1,67 @@
 $btn_color: #a4499b;
-$color: #9651F0;
-body{
-    background-image: url(./../images/pyramids-trip/1.jfif);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-section#definition{
+$color: #9651f0;
+body.pyramids {
+  background-image: url(./../images/pyramids-trip/1.jfif);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  section#definition {
     color: #fff;
-    .row{
-        background-color: rgb(0, 0, 0,.75);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    .row {
+      background-color: rgb(0, 0, 0, 0.75);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
-    .col-md-4{
-        color: $color;
-        padding: 50px 20px;
-        border-left: $color 10px solid;
-        h3{
-            font-weight: bold;
-        }
+    .col-md-4 {
+      color: $color;
+      padding: 50px 20px;
+      border-left: $color 10px solid;
+      h3 {
+        font-weight: bold;
+      }
     }
-    .col-md-6{
-        padding: 50px 20px;
-        line-height: 2;
+    .col-md-6 {
+      padding: 50px 20px;
+      line-height: 2;
     }
-}
+  }
 
-section#photo{
-    background-color: rgb(0, 0, 0,.75);
+  section#photo {
+    background-color: rgb(0, 0, 0, 0.75);
     color: #fff;
-    .photo-bag{
+    .photo-bag {
+      width: 100%;
+      img {
         width: 100%;
-        img{
-            width: 100%;
-            height: 450px;
-        }
+        height: 450px;
+      }
     }
-    .col-md-7{padding: 0;}
-    .col-md-4{padding: 0;}
-    .col-md-6{padding: 0;}
-    img{
-        width: 100%;
-        padding:5px;
-        height: 225px;
+    .col-md-7,.col-md-4,.col-md-6 {padding: 0;}
+    img {
+      width: 100%;
+      padding: 5px;
+      height: 225px;
     }
-}
-footer.pyramids{
+  }
+  footer.pyramids {
     background-image: url(./../images/pyramids-trip/1.jfif);
     .top-footer h5,
     .copyright p,
-    h3{color: $color !important;}
-}
-@media (max-width:520px) {
-    .photo-bag img{
-        width: 100% !important;
-        height: 100% !important;
+    h3 {
+      color: $color !important;
     }
-}
-@media (min-width:520px) and (max-width:770px){
-    .img img{
-        width: 90% !important;
+  }
+  @media (max-width: 520px) {
+    .photo-bag img {
+      width: 100% !important;
+      height: 100% !important;
     }
-}
+  }
+  @media (min-width: 520px) and (max-width: 770px) {
+    .img img {
+      width: 90% !important;
+    }
+  }
 }

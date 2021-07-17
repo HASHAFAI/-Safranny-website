@@ -351,7 +351,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_pyramids_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../css/pyramids.scss */ \"./src/css/pyramids.scss\");\nconsole.log(1);\r\n// import \"bootstrap/dist/css/bootstrap.min.css\"\r\n\r\n// import \"@popperjs/core/dist/cjs/popper.js\"\r\n// import \"bootstrap/dist/js/bootstrap.min.js\"\n\n//# sourceURL=webpack://safrny/./src/js/pyramids.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_pyramids_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../css/pyramids.scss */ \"./src/css/pyramids.scss\");\n\n\n//# sourceURL=webpack://safrny/./src/js/pyramids.js?");
 
 /***/ })
 

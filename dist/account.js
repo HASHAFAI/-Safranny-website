@@ -107,17 +107,6 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*\n* lo
 
 /***/ }),
 
-/***/ "./src/css/account.scss":
-/*!******************************!*\
-  !*** ./src/css/account.scss ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://safrny/./src/css/account.scss?");
-
-/***/ }),
-
 /***/ "./node_modules/querystring/decode.js":
 /*!********************************************!*\
   !*** ./node_modules/querystring/decode.js ***!
@@ -348,10 +337,9 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /*!***************************!*\
   !*** ./src/js/account.js ***!
   \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_account_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../css/account.scss */ \"./src/css/account.scss\");\nconsole.log(22222);\r\n// import \"bootstrap/dist/css/bootstrap.min.css\"\r\n// import \"@fortawesome/fontawesome-free/css/all.min.css\"\r\n\r\n// import \"../asset/jquery-3.1.1.min\"\r\n// import \"./jquery.validate/jquery.validate.min.js\"\r\n// import \"./jquery.validate/messages_ar.min.js\"\r\n// import \"@popperjs/core/dist/cjs/popper.js\"\r\n// import \"bootstrap/dist/js/bootstrap.min.js\"\r\n// $(function () {\r\n//     $(\"#commentForm\").validate();\r\n// });\n\n//# sourceURL=webpack://safrny/./src/js/account.js?");
+eval("\n\n//# sourceURL=webpack://safrny/./src/js/account.js?");
 
 /***/ })
 
@@ -400,17 +388,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/node module decorator */

@@ -15,9 +15,7 @@ body.istanbul {
       width: 60%;
       margin: 0 auto;
       line-height: 2;
-      p {
-        margin: 0;
-      }
+      p {margin: 0;}
     }
     #places {
       background-color: $color_o;
@@ -31,13 +29,9 @@ body.istanbul {
         background-color: transparent;
         box-shadow: none;
         display: contents;
-        p {
-          line-height: 1.7;
-        }
+        p {line-height: 1.7;}
       }
-      .col-md-5 {
-        padding: 20px 0;
-      }
+      .col-md-5 {padding: 20px 0;}
     }
     .slider-img {
       .carousel-inner {
@@ -45,25 +39,17 @@ body.istanbul {
         padding: 50px 0;
         width: 80%;
       }
-      .carousel-inner img {
-        margin: 0 auto;
-      }
+      .carousel-inner img {margin: 0 auto;}
     }
   }
   footer.istanbul {
     background-image: url(./../images/Istanbul-trip/2i.jpg);
     .top-footer h5,
     .copyright p,
-    .top-footer h3 {
-      color: $color_c !important;
-    }
+    .top-footer h3 {color: $color_c !important;}
   }
 }
 @media (max-width: 520px) {
-  #istanbul .text-i {
-    width: 100% !important;
-  }
-  .slider-img .carousel-inner {
-    width: 90% !important;
-  }
+  #istanbul .text-i {width: 100% !important;}
+  .slider-img .carousel-inner {width: 90% !important;}
 }
