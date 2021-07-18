@@ -1,0 +1,92 @@
+$bg-image: url(./../images/bg-drop.jpg);
+$bg-opacity: rgb(0, 0, 0, 0.75);
+$color: #ce62ff;
+
+@mixin background-body($bg-image) {
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@mixin color($color) {
+  color: $color;
+  padding: 50px 20px;
+  border-left: $color 10px solid;
+}
+@mixin background-body-opacity($bg-opacity) {
+  background-color: $bg-opacity;
+}
+body.drop {
+  @include background-body($bg-image);
+
+  section#definition {
+    color: #fff;
+    .row {
+      @include background-body-opacity($bg-opacity);
+      .col-md-4 {
+        @include color($color);
+        h3 {
+          font-weight: bold;
+        }
+      }
+      .col-md-6 {
+        display: flex;
+        align-items: center;
+        padding: 50px 20px;
+        line-height: 2;
+      }
+    }
+  }
+
+  section#places {
+    padding-top: 60px;
+    background-color: ($color);
+    .card {
+      padding: 15px 0;
+      color: #fff;
+      background-color: transparent;
+      box-shadow: none;
+      display: contents;
+      p {line-height: 1.7;}
+    }
+    .col-md-5 {padding: 20px 0;}
+  }
+
+  section#photo {
+    @include background-body-opacity($bg-opacity);
+    h3{color: $color;}
+    color: #fff;
+    .photo-bag {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 450px;
+      }
+    }
+    .col-md-7,
+    .col-md-4,
+    .col-md-6 {padding: 0;}
+    img {
+      width: 100%;
+      padding: 5px;
+      height: 225px;
+    }
+  }
+  footer.drop {
+    @include background-body($bg-image);
+    .top-footer h5,
+    .copyright p,
+    h3 {color: $color;}
+  }
+
+  @media (max-width: 520px) {
+    .photo-bag img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  @media (min-width: 520px) and (max-width: 770px) {
+    .img img {width: 90% !important;}
+  }
+}

@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
-import "./css/style.scss"
-import "./asset/jquery-3.1.1.min"
+import "./../css/style.scss"
+import "../asset/jquery-3.1.1.min"
 import "@popperjs/core/dist/cjs/popper.js"
 import "bootstrap/dist/js/bootstrap.min.js"
 console.log(1);

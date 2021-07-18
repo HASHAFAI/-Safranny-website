@@ -351,7 +351,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_istanbul_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../css/istanbul.scss */ \"./src/css/istanbul.scss\");\n\n\n//# sourceURL=webpack://safrny/./src/js/istanbul.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_istanbul_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../css/istanbul.scss */ \"./src/css/istanbul.scss\");\n// import \"./../css/_mixins.scss\"\r\n\n\n//# sourceURL=webpack://safrny/./src/js/istanbul.js?");
 
 /***/ })
 

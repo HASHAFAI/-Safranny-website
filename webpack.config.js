@@ -6,7 +6,7 @@ const optimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plug
 module.exports ={
 
     entry: { 
-        index: path.resolve(__dirname, './src/index.js'),
+        index: path.resolve(__dirname, './src/js/index.js'),
         accountLogin: path.resolve(__dirname, './src/js/accountLogin.js'), 
         pyramids: path.resolve(__dirname, './src/js/pyramids.js'), 
         istanbul: path.resolve(__dirname, './src/js/istanbul.js'), 
@@ -74,6 +74,12 @@ module.exports ={
                 options: {
                   exposes: ["$", "jQuery"],
                 },
+              },
+              {
+                test: /\.js?$/,
+                include: [ path.resolve(__dirname, "./src/js/index.js") ], 
+                exclude: [ path.resolve(__dirname, "./src/js/istanbul.js")],
+          
               },
         ]
     },

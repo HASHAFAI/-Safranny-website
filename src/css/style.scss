@@ -1,4 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 @font-face {
   font-family: c-cairo;
   src: url(./../asset/font/cairo/Cairo-Regular.ttf);
@@ -8,184 +7,213 @@ $btn_color_h: #f8be30;
 body {
   font-family: "c-cairo", sans-serif;
   width: 100% !important;
-}
 
-nav.navbar {
-  img {
-    width: 100px;
-  }
-  &.noTransparrent {
-    background-color: $btn_color;
-    button.navbar-toggler {
-      margin: 30px 20px;
-      span {
+  nav.navbar {
+    img {
+      width: 100px;
+    }
+    &.noTransparrent {
+      background-color: $btn_color;
+      button.navbar-toggler {
+        margin: 30px 20px;
+        span {
+          color: #fff;
+          outline: none;
+          border: none;
+          box-shadow: none;
+        }
+      }
+      ul.navbar-nav li {
+        padding: 0 10px;
+        a.nav-link {
+          color: #fff;
+        }
+      }
+      ul.navbar-nav li a.nav-link:hover,
+      ul.navbar-nav li a.nav-link.active {
         color: #fff;
-        outline: none;
-        border: none;
-        box-shadow: none;
+        background-color: $btn_color_h;
       }
     }
-    ul.navbar-nav li {
-      padding: 0 10px;
-      a.nav-link {
-        color: #fff;
-      }
+    ul li:last-of-type {
+      position: absolute;
+      left: 10px;
     }
-    ul.navbar-nav li a.nav-link:hover,
-    ul.navbar-nav li a.nav-link.active {
+    .nav-link {
       color: #fff;
-      background-color: $btn_color_h;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      background-color: $btn_color;
     }
   }
-  ul li:last-of-type {
-    position: absolute;
-    left: 10px;
+  .navbar-expand-md .navbar-nav {
+    margin-left: auto;
+    padding-right: 0;
   }
-  .nav-link {
-    color: #fff;
-  }
-  .nav-pills .nav-link.active,
-  .nav-pills .show>.nav-link{background-color: $btn_color}
-}
 
-.navbar-expand-md .navbar-nav {
-  margin-left: auto;
-  padding-right: 0;
-}
-
-header {
-  height: 100%;
-  background-position: center;
-  background-image: url(./../images/airplane.jpg);
-  background-repeat: no-repeat;
-  .header-bg {
+  header {
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.6);
-    div.text-center {
-      padding: 100px 0;
-      color: #fff;
-    }
-    p {
-      padding: 20px;
-      font-size: 18px;
+    background-position: center;
+    background-image: url(./../images/airplane.jpg);
+    background-repeat: no-repeat;
+    .header-bg {
+      height: 100%;
+      background-color: rgb(0, 0, 0, 0.6);
+      div.text-center {
+        padding: 100px 0;
+        color: #fff;
+      }
+      p {
+        padding: 20px;
+        font-size: 18px;
+      }
     }
   }
-}
 
-section#services {
-  background-color: #fff;
-  .card {
-    background: linear-gradient(to right, $btn_color 0%, $btn_color_h 100%);
-    color: #fff;
-    .card-title {
-      display: inline-block;
-      border-bottom: 2px solid #fff;
-      margin-bottom: 0.5rem;
-      padding-bottom: 16px;
+  section#services {
+    background-color: #fff;
+    .card {
+      background: linear-gradient(to right, $btn_color 0%, $btn_color_h 100%);
+      color: #fff;
+      .card-title {
+        display: inline-block;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 0.5rem;
+        padding-bottom: 16px;
+      }
+      .icon-img {
+        width: 215px;
+        height: 140px;
+        margin: 0 auto;
+      }
     }
-    .icon-img {
-      width: 215px;
-      height: 140px;
+  }
+
+  section#tours {
+    padding: 20px 0 40px;
+    background-color: #f3f3f3;
+    .card {
+      color: $btn_color;
+      width: 20rem;
+
+      p {
+        font-size: 12px;
+        position: relative;
+        top: -25px;
+        background-color: $btn_color;
+        display: inline-block;
+        color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      h5 {
+        padding-bottom: 15px;
+        margin: -25px auto 20px;
+        &:before {
+          background-color: $btn_color;
+          bottom: 65px;
+          content: "";
+          height: 2px;
+          position: absolute;
+          right: 115px;
+          width: 80px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-position: center;
+    background-image: url(./../images/airplane.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .top-footer {
+      background-color: rgb(23, 23, 23, 0.9);
+      padding: 40px 0;
+      iframe {
+        width: 100%;
+        height: 180px;
+      }
+      h3 {
+        color: $btn_color_h;
+      }
+      h5 {
+        font-size: 18px;
+        line-height: 65px;
+        color: $btn_color_h;
+        margin-bottom: 30px;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 45px;
+          height: 2px;
+          background-color: #5c5c5c;
+        }
+      }
+      ul {
+        padding: 0;
+        &.contact-us li {
+          margin-bottom: 35px;
+          font-size: 18px;
+          color: #676767;
+          li:last-of-type {
+            margin-bottom: 0px;
+          }
+          i {
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 2px;
+            background-color: #282828;
+            color: #acacac;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .copyright {
+      background-color: rgb(23, 23, 23);
+      p {
+        font-size: 15px;
+        line-height: 78px;
+        color: #919191;
+        margin-bottom: 0;
+      }
+    }
+  }
+  // @media
+  @media (min-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+      padding: 0 20px;
+    }
+    header .text-center {
+      width: 60%;
       margin: 0 auto;
     }
   }
-}
-
-section#tours {
-  padding: 20px 0 40px;
-  background-color: #f3f3f3;
-  .card {
-    color: $btn_color;
-    width: 20rem;
-
-    p {
-      font-size: 12px;
-      position: relative;
-      top: -25px;
+  @media (max-width: 540px) {
+    nav.navbar {
       background-color: $btn_color;
-      display: inline-block;
-      color: #fff;
-      padding: 5px;
-      border-radius: 10px;
-    }
-    h5 {
-      padding-bottom: 15px;
-      margin: -25px auto 20px;
-      &:before {
-        background-color: $btn_color;
-        bottom: 65px;
-        content: "";
-        height: 2px;
-        position: absolute;
-        right: 115px;
-        width: 80px;
+      button span {
+        color: #fff;
+      }
+      button.navbar-toggler,
+      &.noTransparrent button.navbar-toggler {
+        margin: 0;
+        box-shadow: none;
+      }
+      &.noTransparrent ul.navbar-nav li {
+        display: contents;
       }
     }
   }
 }
-footer {
-  background-position: center;
-  background-image: url(./../images/airplane.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  .top-footer {
-    background-color: rgb(23, 23, 23, 0.9);
-    padding: 40px 0;
-    iframe {
-      width: 100%;
-      height: 180px;
-    }
-    h3 {
-      color: $btn_color_h;
-    }
-    h5 {
-      font-size: 18px;
-      line-height: 65px;
-      color: $btn_color_h;
-      margin-bottom: 30px;
-      position: relative;
-      &:before {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 45px;
-        height: 2px;
-        background-color: #5c5c5c;
-      }
-    }
-    ul {
-      padding: 0;
-    }
-    ul.contact-us li {
-      margin-bottom: 35px;
-      font-size: 18px;
-      color: #676767;
-    }
-    ul.contact-us li:last-of-type {
-      margin-bottom: 0px;
-    }
-    ul.contact-us li i {
-      width: 35px;
-      height: 35px;
-      text-align: center;
-      line-height: 35px;
-      border-radius: 2px;
-      background-color: #282828;
-      color: #acacac;
-      margin-left: 20px;
-    }
-  }
-  .copyright {
-    background-color: rgb(23, 23, 23);
-    p {
-      font-size: 15px;
-      line-height: 78px;
-      color: #919191;
-      margin-bottom: 0;
-    }
-  }
-}
+
 // from work
 h3 {
   padding: 30px 0;
@@ -215,31 +243,4 @@ h3 {
   border-radius: 10px;
   box-shadow: 7px 7px 8px -9px #000;
   color: $btn_color;
-}
-
-// @media
-@media (min-width: 768px) {
-  .navbar-light .navbar-nav .nav-link {
-    padding: 0 20px;
-  }
-  header .text-center {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 540px) {
-  nav.navbar {
-    background-color: $btn_color;
-  }
-  nav.navbar button span {
-    color: #fff;
-  }
-  nav.navbar button.navbar-toggler,
-  nav.navbar.noTransparrent button.navbar-toggler {
-    margin: 0;
-    box-shadow: none;
-  }
-  nav.navbar.noTransparrent ul.navbar-nav li {
-    display: contents;
-  }
 }
